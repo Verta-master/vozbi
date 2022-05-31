@@ -1,0 +1,39 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 167px;
+  height: 46px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+  border-radius: 8px;
+}
+.btn--border {
+  position: relative;
+  z-index: 1;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    border-radius: 7px;
+    background: #fff;
+  }
+  span {
+    position: relative;
+    z-index: 3;
+    background: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
