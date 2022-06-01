@@ -15,17 +15,7 @@ function postsCarousel() {
       nav: true,
       dots: false,
       navText:["",""],
-      responsive:{
-        0:{
-          items: 1
-        },
-        480:{
-          items: 2,
-        },
-        766:{
-          items: 3,
-        },
-      }
+      autoWidth: true,
     });
   }
 }
