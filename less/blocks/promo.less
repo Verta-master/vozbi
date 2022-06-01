@@ -1,0 +1,71 @@
+.promo__slider {
+  
+}
+.promo__slide {
+  height: 490px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  .wrapper {
+    height: 100%;
+    position: relative;
+  }
+}
+.promo__wrap {
+  width: 600px;
+  height: 100%;
+  max-width: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.promo__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #000000;
+  
+  b {
+    font-weight: 800;
+    background: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  width: 46px;
+  height: 46px;
+  margin: 0;
+  margin-top: -40px;
+  background-image: url(../img/icons/next.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+}
+.owl-theme .owl-nav [class*=owl-]:hover,
+.owl-theme .owl-nav [class*=owl-]:active {
+  background-image: url(../img/icons/next.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: rgba(255, 253, 239,0.5);
+  outline: none;
+}
+.owl-carousel .owl-nav button.owl-next {
+  right: ~"calc(50% - 700px)";
+}
+.owl-carousel .owl-nav button.owl-prev {
+  left: ~"calc(50% - 700px)";
+  transform: rotate(180deg);
+}

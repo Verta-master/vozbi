@@ -1,0 +1,39 @@
+.menu {
+  background: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+}
+.menu__sublist,
+.menu__list {
+  .reset();
+  list-style: none;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__item {
+  
+}
+.menu__link {
+  display: block;
+  padding: 20px 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fff;
+  
+  span,
+  svg {
+    display: inline-block;
+    vertical-align: middle
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    margin-right: 15px;
+  }
+}
+.menu__sublist {
+  display: none;
+}

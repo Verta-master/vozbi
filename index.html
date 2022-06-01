@@ -201,6 +201,16 @@
                 </div>
               </a>
             </div>
+            <div class="item gallery__slide">
+              <a href="#" class="gallery__link">
+                <figure class="gallery__img">
+                  <img src="img/images/img-1.jpg" alt="галерея">
+                </figure>
+                <div class="gallery__text">
+                  <p>Монтаж сплит-системы Samsung AR09TQHQAURNER в Москве</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -561,40 +571,44 @@
     <section class="info">
       <div class="wrapper">
         <p class="title-2">полезная информация<a href="#" class="more">Смотреть все</a></p>
-        <div class="info__blocks list">
+        <div class="info__blocks">
           <div class="info__block info__block--img">
-            <figure class="info__img">
-              <img src="img/images/img-5.jpg" alt="полезная информация">
-            </figure>
-            <div class="info__text">
-              <p class="title-3">Как правильно подобрать кондиционер для помещения</p>
-              <p>Небольшой текст с описанием услуги кондиционера с установкой. Интересный текст в несколько строчек. Небольшой текст с описанием услуги кондиционер. Небольшой текст с описанием услуги.</p>
-            </div>
+            <a href="#" class="info__link">
+              <figure class="info__img">
+                <img src="img/images/img-5.jpg" alt="полезная информация">
+              </figure>
+              <div class="info__text">
+                <p class="info__title">Как правильно подобрать кондиционер для помещения</p>
+                <p>Небольшой текст с описанием услуги кондиционера с установкой. Интересный текст в несколько строчек. Небольшой текст с описанием услуги кондиционер. Небольшой текст с описанием услуги.</p>
+              </div>
+            </a>
           </div>
           <div class="info__block">
             <ul>
-              <li>Как правильно подобрать кондиционер для помещения</li>
-              <li>Самые частые поломки кондиционеров и сплит-систем</li>
-              <li>Как правильно подобрать кондиционер для помещения</li>
-              <li>Самые частые поломки кондиционеров</li>
+              <li><a href="#">Как правильно подобрать кондиционер для помещения</a></li>
+              <li><a href="#">Самые частые поломки кондиционеров и сплит-систем</a></li>
+              <li><a href="#">Как правильно подобрать кондиционер для помещения</a></li>
+              <li><a href="#">Самые частые поломки кондиционеров</a></li>
             </ul>
           </div>
           <div class="info__block">
             <ul>
-              <li>Как правильно подобрать кондиционер для помещения</li>
-              <li>Самые частые поломки кондиционеров и сплит-систем</li>
-              <li>Как правильно подобрать кондиционер для помещения</li>
-              <li>Самые частые поломки кондиционеров</li>
+              <li><a href="#">Как правильно подобрать кондиционер для помещения</a></li>
+              <li><a href="#">Самые частые поломки кондиционеров и сплит-систем</a></li>
+              <li><a href="#">Как правильно подобрать кондиционер для помещения</a></li>
+              <li><a href="#">Самые частые поломки кондиционеров</a></li>
             </ul>
           </div>
           <div class="info__block info__block--img">
-            <figure class="info__img">
-              <img src="img/images/img-6.jpg" alt="полезная информация">
-            </figure>
-            <div class="info__text">
-              <p class="title-3">Как правильно подобрать кондиционер для помещения</p>
-              <p>Небольшой текст с описанием услуги кондиционера с установкой. Интересный текст в несколько строчек. Небольшой текст с описанием услуги кондиционер. Небольшой текст с описанием услуги.</p>
-            </div>
+            <a href="#" class="info__link">
+              <figure class="info__img">
+                <img src="img/images/img-5.jpg" alt="полезная информация">
+              </figure>
+              <div class="info__text">
+                <p class="info__title">Как правильно подобрать кондиционер для помещения</p>
+                <p>Небольшой текст с описанием услуги кондиционера с установкой. Интересный текст в несколько строчек. Небольшой текст с описанием услуги кондиционер. Небольшой текст с описанием услуги.</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -624,6 +638,12 @@
             </div>
             <div class="item brands__slide">
               <img src="img/images/toshiba.png" alt="бренды">
+            </div>
+            <div class="item brands__slide">
+              <img src="img/images/vitek.png" alt="бренды">
+            </div>
+            <div class="item brands__slide">
+              <img src="img/images/york.png" alt="бренды">
             </div>
           </div>
         </div>
@@ -679,6 +699,7 @@
       nav: true,
       dots: false,
       navText:["",""],
+      items: 1
     })
     
     $('.brands__slider').owlCarousel({
@@ -706,6 +727,28 @@
         1200:{
           items: 7,
           margin: 97
+        }
+      }
+    })
+    
+    $('.gallery__slider').owlCarousel({
+      loop: true,
+      nav: true,
+      dots: true,
+      navText:["",""],
+      margin: 30,
+      responsive:{
+        0:{
+          items: 1,
+        },
+        480:{
+          items: 2,
+        },
+        960:{
+          items: 3,
+        },
+        1200:{
+          items: 4,
         }
       }
     })
