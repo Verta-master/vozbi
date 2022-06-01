@@ -1,5 +1,5 @@
 .fan {
-  
+  margin-bottom: 40px;
 }
 .fan__wrap {
   display: flex;
@@ -21,4 +21,13 @@
   top: 25px;
   left: 25px;
   z-index: 5;
+  animation: rotation 2.5s linear 0s infinite normal forwards;
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

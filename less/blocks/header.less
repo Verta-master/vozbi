@@ -26,19 +26,27 @@
     font-size: 18px;
     line-height: 26px;
     color: #5D3589;
+    .transition();
   }
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
     background-size: contain;
   }
-  &--email::before {
-    background-image: url(../img/icons/email.svg);
+  &--email {
+    &::before {
+      background-image: url(../img/icons/email.svg);
+    }
+    a:hover,
+    a:active {
+      color: #000;
+      .transition();
+    }
   }
   &--time {
     span {
@@ -54,6 +62,12 @@
       font-size: 18px;
       line-height: 26px;
       color: #000;
+      
+      &:hover,
+      &:active {
+        color: #5D3589;
+        .transition();
+      }
     }
     &::before {
       background-image: url(../img/icons/phone.svg);
@@ -74,16 +88,26 @@
   position: relative;
   width: 32px;
   height: 32px;
-  margin-left: 21px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   
   &--like {
     background-image: url(../img/icons/heart.svg);
+    
+    &:hover,
+    &:active {
+      background-image: url(../img/icons/heart-black.svg);
+    }
   }
   &--cart {
+    margin-left: 21px;
     background-image: url(../img/icons/cart.svg);
+    
+    &:hover,
+    &:active {
+      background-image: url(../img/icons/cart-black.svg);
+    }
   }
 }
 .header__num {

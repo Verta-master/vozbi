@@ -129,6 +129,8 @@ h2,
   color: #000;
   
   a {
+    display: inline-block;
+    vertical-align: middle;
     margin-left: 30px;
     font-weight: 400;
     font-size: 16px;
@@ -136,6 +138,13 @@ h2,
     color: #828282;
     text-decoration: none;
     text-transform: none;
+    .transition();
+    
+    &:hover,
+    &:active {
+      color: #000;
+      .transition();
+    }
   }
 }
 h3,

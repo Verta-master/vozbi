@@ -10,12 +10,19 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  background: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+  background-color: #5D3589;
+  background-image: linear-gradient(90deg, #9945B7 0%, #313681 100%);
   border-radius: 8px;
+  
+  &:hover,
+  &:active {
+    background-image: none;
+  }
 }
 .btn--border {
   position: relative;
   z-index: 1;
+  background-color: rgba(255,255,255,0);
   
   &::before {
     content: "";
@@ -27,6 +34,7 @@
     right: 2px;
     border-radius: 7px;
     background: #fff;
+    .transition();
   }
   span {
     position: relative;
@@ -36,5 +44,23 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    .transition();
+  }
+  &:hover,
+  &:active {
+    background-color: #5D3589;;
+    background-image: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+    
+    span {
+      color: #fff;
+      background: none;
+      -webkit-text-fill-color: #fff;
+      text-fill-color: #fff;
+      .transition();
+    }
+    &::before {
+      opacity: 0;
+      .transition();
+    }
   }
 }

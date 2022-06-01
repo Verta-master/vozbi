@@ -1,6 +1,6 @@
 function postsCarousel() {
   var checkWidth = $(window).width();
-  var owlPost = $(".category__slider");
+  var owlPost = $(".catalog__slider");
   
   if (checkWidth > 1200) {
     if (typeof owlPost.data('owl.carousel') != 'undefined') {
