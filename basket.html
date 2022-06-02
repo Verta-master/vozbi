@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>VOZBI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__wrap">
+      <a href="index.html" class="logo">
+        <img src="img/images/logo.png" alt="VOZBI">
+      </a>
+      <div class="header__block header__block--email">
+        <span>E-mail</span>
+        <a href="mailto:mail@vozbi.ru">mail@vozbi.ru</a>
+      </div>
+      <div class="header__block header__block--time">
+        <span>Работаем круглосуточно<br>без выходных</span>
+      </div>
+      <div class="header__block header__block--phone">
+        <span>Телефон</span>
+        <a href="tel:+74994442108">8 (499) 444-21-08</a>
+      </div>
+      <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--border header__btn"><span>перезвоните мне</span></a>
+      <div class="header__user">
+        <a href="#" class="header__link header__link--like" title="Избранное"></a>
+        <a href="#" class="header__link header__link--cart" title="Корзина">
+          <span class="header__num">3</span>
+        </a>
+      </div>
+      <a href="#menu" class="menu-mobile"></a>
+    </div>
+  </header>
+  
+  <nav class="menu">
+    <div class="wrapper menu__wrap">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 3C0 2.44772 0.497461 2 1.11111 2H18.8889C19.5025 2 20 2.44772 20 3C20 3.55228 19.5025 4 18.8889 4H1.11111C0.497461 4 0 3.55228 0 3Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 9.44772 0.497461 9 1.11111 9H18.8889C19.5025 9 20 9.44772 20 10C20 10.5523 19.5025 11 18.8889 11H1.11111C0.497461 11 0 10.5523 0 10Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17C0 16.4477 0.497461 16 1.11111 16H18.8889C19.5025 16 20 16.4477 20 17C20 17.5523 19.5025 18 18.8889 18H1.11111C0.497461 18 0 17.5523 0 17Z"/>
+            </svg>
+            <span>каталог товаров</span>
+          </a>
+          <ul class="menu__sublist">
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">
+                <img src="img/icons/icon-1.svg" alt="Кондиционеры">
+                <span>Кондиционеры</span>
+              </a>
+              <button type="button" class="menu__arrow"></button>
+              <div class="menu__drop">
+                <ul class="menu__droplist">
+                  <li><a href="#">Инверторные</a></li>
+                  <li><a href="#">Канальные</a></li>
+                  <li><a href="#">Оконные</a></li>
+                  <li><a href="#">Сплит-системы</a></li>
+                  <li><a href="#">Напольно-потолочные</a></li>
+                  <li><a href="#">Мобильные</a></li>
+                </ul>
+                <div class="menu__brands">
+                  <span>ПО БРЕНДАМ</span>
+                  <ul class="menu__brandlist">
+                    <li><a href="#">Haier</a></li>
+                    <li><a href="#">LG</a></li>
+                    <li><a href="#">Royal Clima</a></li>
+                    <li><a href="#">Hitachi</a></li>
+                    <li><a href="#">Electrolux</a></li>
+                    <li><a href="#">Haier</a></li>
+                    <li><a href="#">LG</a></li>
+                    <li><a href="#">Royal Clima</a></li>
+                    <li><a href="#">Hitachi</a></li>
+                    <li><a href="#">Electrolux</a></li>
+                    <li><a href="#">Haier</a></li>
+                    <li><a href="#">LG</a></li>
+                    <li><a href="#">Royal Clima</a></li>
+                    <li><a href="#">Hitachi</a></li>
+                    <li><a href="#">Electrolux</a></li>
+                    <li><a href="#">Haier</a></li>
+                    <li><a href="#">LG</a></li>
+                    <li><a href="#">Royal Clima</a></li>
+                    <li><a href="#">Hitachi</a></li>
+                    <li><a href="#">Electrolux</a></li>
+                  </ul>
+                  <a href="#" class="menu__more">Показать все</a>
+                </div>
+              </div>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">
+                <img src="img/icons/icon-2.svg" alt="бризеры">
+                <span>бризеры</span>
+              </a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">
+                <img src="img/icons/icon-3.svg" alt="расходные материалы">
+                <span>расходные материалы</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">главная</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">как заказать</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">оплата и доставка</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">установка</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <div class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">Главная</a>
+        <span class="breadcrumbs__link">корзина</span>
+      </div>
+    </div>
+    
+    <section class="basket">
+      <div class="wrapper">
+        <h1>корзина</h1>
+        <div class="basket__wrap">
+          <div class="basket__table">
+            <table>
+              <tr>
+                <th>Фото</th>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Сумма</th>
+                <th>Удалить</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" class="basket__img">
+                    <img src="img/images/product-1.jpg" alt="Сплит-система AIRWELL AW-HFD012-N11/AW-YHFD012-H11">
+                  </a>
+                </td>
+                <td><a href="#" class="basket__title">Сплит-система AIRWELL AW-HFD012-N11/AW-YHFD012-H11</a></td>
+                <td><p class="basket__price">19 400 &#8381;</p></td>
+                <td>
+                  <div class="form__num">
+                    <button type="button" class="form__change form__change--minus form__disabled">&ndash;</button>
+                    <input type="text" class="form__value" value="1">
+                    <button type="button" class="form__change form__change--plus">+</button>
+                  </div>
+                </td>
+                <td><p class="basket__price"><b>19 400 &#8381;</b></p></td>
+                <td><a href="#" class="basket__remove" title="Удалить"></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" class="basket__img">
+                    <img src="img/images/product-2.jpg" alt="Инвертор CS/CU-E07RKD PANASONIC">
+                  </a>
+                </td>
+                <td><a href="#" class="basket__title">Инвертор CS/CU-E07RKD PANASONIC</a></td>
+                <td><p class="basket__price">58 900 &#8381;</p></td>
+                <td>
+                  <div class="form__num">
+                    <button type="button" class="form__change form__change--minus form__disabled">&ndash;</button>
+                    <input type="text" class="form__value" value="1">
+                    <button type="button" class="form__change form__change--plus">+</button>
+                  </div>
+                </td>
+                <td><p class="basket__price"><b>58 900 &#8381;</b></p></td>
+                <td><a href="#" class="basket__remove" title="Удалить"></a></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="#" class="basket__img">
+                    <img src="img/images/product-1.jpg" alt="Сплит-система AERONIK ASI-07HS5/ASO-07HS5">
+                  </a>
+                </td>
+                <td><a href="#" class="basket__title">Сплит-система AERONIK ASI-07HS5/ASO-07HS5</a></td>
+                <td><p class="basket__price">20 300 &#8381;</p></td>
+                <td>
+                  <div class="form__num">
+                    <button type="button" class="form__change form__change--minus">&ndash;</button>
+                    <input type="text" class="form__value" value="2">
+                    <button type="button" class="form__change form__change--plus">+</button>
+                  </div>
+                </td>
+                <td><p class="basket__price"><b>20 300 &#8381;</b></p></td>
+                <td><a href="#" class="basket__remove" title="Удалить"></a></td>
+              </tr>
+            </table>
+          </div>
+          <p class="basket__sum">Итого: <span>118 900 ₽</span></p>
+        </div>
+        
+        <div class="basket__order">
+          <p class="title-3">оформление заказа</p>
+          <form action="#" class="form">
+            <div class="form__string">
+              <div class="form__field">
+                <label for="name" class="form__text">Фамилия, Имя *</label>
+                <input type="text" id="name" class="form__input" required>
+              </div>
+              <div class="form__field">
+                <label for="name" class="form__text">Телефон *</label>
+                <input type="text" id="name" class="form__input" required>
+              </div>
+              <div class="form__field">
+                <label for="name" class="form__text">E-mail</label>
+                <input type="text" id="name" class="form__input">
+              </div>
+            </div>
+            <label for="message" class="form__text">Комментарий к заказу</label>
+            <textarea id="message" class="form__message"></textarea>
+            <div class="form__string">
+              <div class="form__field form__field--delivery">
+                <div class="form__text">Способ доставки</div>
+                <input type="radio" id="radio1" name="radio" class="form__radio" checked>
+                <label for="radio1" class="form__radiolabel">Доставка</label>
+                <input type="radio" id="radio2" name="radio" class="form__radio">
+                <label for="radio2" class="form__radiolabel">Самовывоз</label>
+              </div>
+              <div class="form__field form__field--city">
+                <label for="name" class="form__text">Город доставки</label>
+                <input type="text" id="name" class="form__input">
+              </div>
+              <div class="form__field form__field--address">
+                <label for="name" class="form__text">Адрес</label>
+                <input type="text" id="name" class="form__input">
+              </div>
+            </div>
+            <div class="form__bottom">
+              <input type="checkbox2" id="checkbox" class="form__checkbox" checked>
+              <label for="checkbox2" class="form__label">Принимаю <a href="#">пользовательское положение и политику конфиденциальности</a></label>
+              <p class="form__comment">* — обязательно для заполнения</p>
+            </div>
+            <button type="submit" class="btn form__order">оформить заказ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <nav class="footer__nav">
+        <ul class="footer__menu">
+          <li class="footer__item"><a href="#">главная</a></li>
+          <li class="footer__item"><a href="#">о компании</a></li>
+          <li class="footer__item"><a href="#">как заказать</a></li>
+          <li class="footer__item"><a href="#">оплата и доставка</a></li>
+          <li class="footer__item"><a href="#">установка</a></li>
+          <li class="footer__item"><a href="#">полезная информация</a></li>
+          <li class="footer__item"><a href="#">контакты</a></li>
+        </ul>
+      </nav>
+      <div class="footer__bottom">
+        <div class="footer__text">
+          <span>© 2022 Vozbi.ru Продажа климатической техники</span>
+        </div>
+        <div class="footer__info">
+          <a href="#">Пользовательское положение</a>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__link footer__link--email">
+          <span>E-mail</span>
+          <a href="mailto:mail@vozbi.ru">mail@vozbi.ru</a>
+        </div>
+        <div class="footer__link footer__link--phone">
+          <span>Телефон</span>
+          <a href="tel:+74994442108">8 (499) 444-21-08</a>
+        </div>
+        <div class="footer__payment">
+          <img src="img/icons/payments.svg" alt="payment">
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="title-4">заказать обратный<br>звонок</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="tel" class="form__input" placeholder="Телефон *" required>
+      <p class="form__comment">* — обязательно для заполнения</p>
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked>
+      <label for="checkbox" class="form__label">Принимаю <a href="#">пользовательское положение и политику конфиденциальности</a></label>
+      <button class="btn form__btn">перезвоните мне</button>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+</body>
+</html>
