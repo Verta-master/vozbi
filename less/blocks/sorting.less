@@ -1,0 +1,26 @@
+.sorting {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+}
+.sorting__link {
+  margin-left: 20px;
+  color: #5D3589;
+  text-decoration: none;
+  border-bottom: 1px dashed #5D3589;
+  
+  &:hover,
+  &:active {
+    color: #000;
+    border-bottom-color: rgba(255,255,255,0);
+  }
+  &--active {
+    pointer-events: none;
+    border-bottom: 0;
+    color: #444444;
+  }
+}

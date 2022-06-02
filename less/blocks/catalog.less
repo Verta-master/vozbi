@@ -1,12 +1,25 @@
 .catalog {
   margin-bottom: 30px;
+  
+  &--internal {
+    h1,
+    .title {
+      margin-top: 0;
+    }
+  }
 }
+.catalog__list {
+  .reset();
+  list-style: none;
+}
+.catalog__list,
 .catalog__slider {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-top: 30px;
 }
+.catalog__item,
 .catalog__slide {
   position: relative;
   z-index: 2;
