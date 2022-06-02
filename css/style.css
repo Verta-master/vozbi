@@ -594,10 +594,11 @@ section {
   margin-bottom: 60px;
 }
 .wrapper__content {
-  width: calc(100% - 310px);
+  width: calc(100% - 320px);
 }
 .sidebar {
   width: 290px;
+  max-width: 100%;
 }
 .btn {
   display: -webkit-box;
@@ -2210,7 +2211,8 @@ blockquote .article__comment {
   background: #F7F6FA;
   border-radius: 10px;
   margin-bottom: 30px;
-  padding: 30px;
+  padding: 35px 30px;
+  padding-bottom: 25px;
 }
 .filter__title {
   margin-top: 0;
@@ -2278,7 +2280,7 @@ blockquote .article__comment {
   border-bottom-color: rgba(255, 255, 255, 0);
 }
 .filter__more {
-  margin-top: 13px;
+  margin-top: 17px;
 }
 .filter__wrap {
   display: -webkit-box;
@@ -2292,7 +2294,7 @@ blockquote .article__comment {
           align-items: center;
   font-size: 14px;
   line-height: 22px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 .filter__input {
   width: 91px;
@@ -2302,7 +2304,14 @@ blockquote .article__comment {
   border: 1px solid #E8E8E8;
   border-radius: 8px;
 }
+.filter__drop {
+  margin-top: 20px;
+}
+.filter__close {
+  display: none;
+}
 .filter__range {
+  margin-bottom: 6px;
   /* Ползунок */
   /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
   /* позиционируем ползунки */
@@ -2372,7 +2381,7 @@ blockquote .article__comment {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 .tags__link {
   display: -webkit-box;
@@ -2527,8 +2536,12 @@ span.pages__link {
   .gallery__slider .owl-nav button.owl-prev {
     top: -70px;
   }
+  .catalog__list,
   .catalog__slider {
     margin-right: -10px;
+  }
+  .catalog__item {
+    margin-right: 15px;
   }
   .catalog__slide {
     margin-right: 20px;
@@ -2700,6 +2713,79 @@ span.pages__link {
     max-width: 100%;
     width: 33%;
   }
+  .wrapper--columns {
+    display: block;
+  }
+  .wrapper__content {
+    width: 100%;
+  }
+  .catalog__list {
+    margin-right: 0;
+  }
+  .catalog__item {
+    margin-right: 30px;
+  }
+  .filter {
+    padding: 20px;
+  }
+  .filter__title {
+    margin-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  .filter__field {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    max-width: 100%;
+    display: block;
+    opacity: 0;
+    width: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 5px 20px rgba(54, 34, 79, 0.1);
+            box-shadow: 0px 5px 20px rgba(54, 34, 79, 0.1);
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+  .filter__field--open {
+    opacity: 1;
+    width: 360px;
+    z-index: 1100;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+  }
+  .filter__options {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px 30px;
+  }
+  .filter__options::before {
+    content: "Фильтры";
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .filter__close {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/cross.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+  }
 }
 @media (max-width: 1022px) {
   .promo__title {
@@ -2717,6 +2803,18 @@ span.pages__link {
   }
   .article__img {
     margin-bottom: 20px;
+  }
+  .catalog__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .catalog__item {
+    margin-right: 0;
+  }
+  .pages {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 700px) {
@@ -2886,6 +2984,10 @@ span.pages__link {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .sorting {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 @media (max-width: 480px) {
   .header__link {
@@ -2969,5 +3071,20 @@ span.pages__link {
   .article table td:first-child {
     width: 100%;
     font-weight: 600;
+  }
+  .sorting {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .breadcrumbs {
+    margin-top: 70px;
   }
 }
