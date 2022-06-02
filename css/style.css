@@ -630,19 +630,11 @@ section {
   position: relative;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0);
-}
-.btn--border::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 2px;
-  bottom: 2px;
-  left: 2px;
-  right: 2px;
-  border-radius: 7px;
-  background: #fff;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
+  background-image: radial-gradient(circle at 100% 100%, transparent 8px, #9945b7 8px, #9945b7 10px, transparent 10px), -webkit-gradient(linear, left top, right top, from(#9945b7), to(#313681)), radial-gradient(circle at 0% 100%, transparent 8px, #313681 8px, #313681 10px, transparent 10px), -webkit-gradient(linear, left top, left bottom, from(#313681), to(#313681)), radial-gradient(circle at 0% 0%, transparent 8px, #313681 8px, #313681 10px, transparent 10px), -webkit-gradient(linear, right top, left top, from(#313681), to(#9945b7)), radial-gradient(circle at 100% 0%, transparent 8px, #9945b7 8px, #9945b7 10px, transparent 10px), -webkit-gradient(linear, left bottom, left top, from(#9945b7), to(#9945b7));
+  background-image: radial-gradient(circle at 100% 100%, transparent 8px, #9945b7 8px, #9945b7 10px, transparent 10px), linear-gradient(to right, #9945b7, #313681), radial-gradient(circle at 0% 100%, transparent 8px, #313681 8px, #313681 10px, transparent 10px), linear-gradient(to bottom, #313681, #313681), radial-gradient(circle at 0% 0%, transparent 8px, #313681 8px, #313681 10px, transparent 10px), linear-gradient(to left, #313681, #9945b7), radial-gradient(circle at 100% 0%, transparent 8px, #9945b7 8px, #9945b7 10px, transparent 10px), linear-gradient(to top, #9945b7, #9945b7);
+  background-size: 10px 10px, calc(100% - 20px) 2px, 10px 10px, 2px calc(100% - 20px);
+  background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+  background-repeat: no-repeat;
 }
 .btn--border span {
   position: relative;
@@ -661,6 +653,8 @@ section {
   background-color: #5D3589;
   background-image: -webkit-gradient(linear, left top, right top, from(#9945B7), to(#313681));
   background-image: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+  background-size: auto;
+  background-position: auto;
 }
 .btn--border:hover span,
 .btn--border:active span {
@@ -668,12 +662,6 @@ section {
   background: none;
   -webkit-text-fill-color: #fff;
   text-fill-color: #fff;
-  -webkit-transition: ease-out 0.3s;
-  transition: ease-out 0.3s;
-}
-.btn--border:hover::before,
-.btn--border:active::before {
-  opacity: 0;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -1943,12 +1931,12 @@ section {
 .form__label::before {
   content: "";
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
   width: 25px;
   height: 25px;
-  background: -webkit-gradient(linear, left top, right top, from(#9945B7), to(#313681));
-  background: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+  background-color: #fff;
+  border: 1px solid #E8E8E8;
   border-radius: 8px;
 }
 .form__checkbox:checked + .form__label::before {
@@ -2223,6 +2211,157 @@ blockquote .article__comment {
   border-radius: 10px;
   margin-bottom: 30px;
   padding: 30px;
+}
+.filter__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+  text-transform: uppercase;
+}
+.filter__block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #E8E8E8;
+}
+.filter__block .form__label {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.filter__block .form__label:last-of-type {
+  margin-bottom: 0;
+}
+.filter__block .form__label:nth-of-type(n + 9) {
+  display: none;
+}
+.filter__block--more .form__label:nth-of-type(n + 9) {
+  display: block;
+}
+.filter__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+}
+.filter__btn {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.filter__cancel {
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.filter__cancel,
+.filter__more {
+  display: block;
+  color: #5D3589;
+  text-decoration: none;
+}
+.filter__cancel span,
+.filter__more span {
+  border-bottom: 1px dashed #5D3589;
+}
+.filter__cancel:hover span,
+.filter__more:hover span,
+.filter__cancel:active span,
+.filter__more:active span {
+  border-bottom-color: rgba(255, 255, 255, 0);
+}
+.filter__more {
+  margin-top: 13px;
+}
+.filter__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+.filter__input {
+  width: 91px;
+  height: 46px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+}
+.filter__range {
+  /* Ползунок */
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  /* позиционируем ползунки */
+  /* оформление полосы по которой ходит ползунок */
+  /* оформление активного участка (между двумя ползунками) */
+  /* скругление для полосы слайдера */
+}
+.filter__range .ui-slider {
+  position: relative;
+}
+.filter__range .ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(#9945B7), to(#313681));
+  background: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+  cursor: pointer;
+  outline: none;
+}
+.filter__range .ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: 0.7em;
+  display: block;
+  border: 0;
+  overflow: hidden;
+}
+.filter__range .ui-slider-horizontal {
+  height: 4px;
+}
+.filter__range .ui-slider-horizontal .ui-slider-handle {
+  top: -8px;
+  margin-left: -8px;
+}
+.filter__range .ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+.filter__range .ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+.filter__range .ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+.filter__range .ui-widget-content {
+  border: 0;
+  background-color: rgba(93, 53, 137, 0.2);
+}
+.filter__range .ui-widget-header {
+  border: 0;
+  background: #5D3589;
+}
+.filter__range .ui-corner-all {
+  border-radius: 4px;
+}
+.filter__range .ui-widget.ui-widget-content {
+  border: 0;
 }
 .tags {
   display: -webkit-box;

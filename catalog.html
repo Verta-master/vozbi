@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -143,21 +144,37 @@
           <p class="filter__title">фильтр</p>
           <div class="filter__block">
             <p class="filter__subtitle">Цена</p>
-
+            <div class="filter__wrap">
+              <span>от</span>
+              <input type="text" id="amount-min" class="filter__input">
+              <span>до</span>
+              <input type="text" id="amount-max" class="filter__input">
+            </div>
+            <div class="filter__range">
+              <div id="slider-range"></div>
+            </div>
           </div>
           <div class="filter__block">
             <p class="filter__subtitle">Площадь охлаждения</p>
-
+            <div class="filter__wrap">
+              <span>от</span>
+              <input type="text" id="amount-min2" class="filter__input">
+              <span>до</span>
+              <input type="text" id="amount-max2" class="filter__input">
+            </div>
+            <div class="filter__range">
+              <div id="slider-range2"></div>
+            </div>
           </div>
           <div class="filter__block">
             <p class="filter__subtitle">Тип</p>
             <div class="filter__drop">
               <input type="checkbox" id="checkbox01" class="form__checkbox" checked="">
-              <label for="checkbox01" class="form__label"></label>
+              <label for="checkbox01" class="form__label">Инверторный</label>
               <input type="checkbox" id="checkbox02" class="form__checkbox">
-              <label for="checkbox02" class="form__label"></label>
+              <label for="checkbox02" class="form__label">Еще какой-то</label>
               <input type="checkbox" id="checkbox03" class="form__checkbox">
-              <label for="checkbox03" class="form__label"></label>
+              <label for="checkbox03" class="form__label">И третий вариат</label>
             </div>
           </div>
           <div class="filter__block">
@@ -179,11 +196,17 @@
               <label for="checkbox17" class="form__label">Ballu</label>
               <input type="checkbox" id="checkbox18" class="form__checkbox">
               <label for="checkbox18" class="form__label">Hitachi</label>
+              <input type="checkbox" id="checkbox19" class="form__checkbox" checked="">
+              <label for="checkbox19" class="form__label">Samsung</label>
+              <input type="checkbox" id="checkbox20" class="form__checkbox">
+              <label for="checkbox20" class="form__label">Hitachi</label>
               <a href="#" class="filter__more"><span>Показать еще</span></a>
             </div>
           </div>
-          <a href="#" class="btn btn--border filter__btn"><span>применить</span></a>
-          <a href="#" class="filter__cancel"><span>Сбросить все</span></a>
+          <div class="filter__block">
+            <a href="#" class="btn btn--border filter__btn"><span>применить</span></a>
+            <a href="#" class="filter__cancel"><span>Сбросить все</span></a>
+          </div>
         </div>
       </aside>
       
@@ -683,5 +706,17 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/range-slider.js"></script>
+  
+<!-- Show more -->
+  <script>
+    $('.filter__more').click(function() {
+      event.preventDefault();
+      $(this).hide();
+      $('.filter__block').addClass('filter__block--more');
+    })
+  </script>
 </body>
 </html>
