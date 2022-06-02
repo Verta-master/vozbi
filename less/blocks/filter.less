@@ -69,6 +69,7 @@
   }
   &:hover span,
   &:active span {
+    color: #000;
     border-bottom-color: rgba(255,255,255,0);
   }
 }
@@ -90,6 +91,13 @@
   background: #FFFFFF;
   border: 1px solid #E8E8E8;
   border-radius: 8px;
+  .transition();
+  
+  &:hover,
+  &:focus {
+    border-color: #5D3589;
+    .transition();
+  }
 }
 .filter__drop {
   margin-top: 20px;

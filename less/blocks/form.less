@@ -40,6 +40,7 @@
   font-size: 14px;
   line-height: 22px;
   color: #444444;
+  cursor: pointer;
   
   a {
     color: #5D3589;
@@ -60,6 +61,11 @@
     border: 1px solid #E8E8E8;
 //    background: linear-gradient(90deg, #9945B7 0%, #313681 100%);
     border-radius: 8px;
+    .transition();
+  }
+  &:hover::before {
+    border-color: #5D3589;
+    .transition();
   }
 }
 .form__checkbox:checked + .form__label::before {
