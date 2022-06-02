@@ -3068,9 +3068,11 @@ span.pages__link {
   .promo__wrap {
     width: 550px;
   }
+  .card__wrap,
   .article__wrap {
     display: block;
   }
+  .card__info,
   .article__info {
     width: 100%;
   }
@@ -3089,6 +3091,12 @@ span.pages__link {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .card__view {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 700px) {
   .header__btn {
@@ -3106,6 +3114,7 @@ span.pages__link {
   .fan__wrap {
     display: block;
   }
+  .card__view,
   .fan__info {
     width: 100%;
   }
@@ -3359,5 +3368,38 @@ span.pages__link {
   }
   .breadcrumbs {
     margin-top: 70px;
+  }
+  .card__tabs,
+  .card__form {
+    padding: 20px;
+  }
+  .card__list,
+  .card__line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card__name,
+  .card__num,
+  .card__price {
+    margin-right: 0;
+  }
+  .card__click {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .card__name {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .card__list {
+    margin-bottom: 0;
+  }
+  .card__slide {
+    height: 300px;
+  }
+  .card__thumb {
+    height: 60px;
   }
 }
