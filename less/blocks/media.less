@@ -258,6 +258,10 @@
     background-size: 20px 20px;
     background-position: center;
   }
+  .form__string .form__field--address,
+  .form__string .form__field--delivery {
+    width: 32%;
+  }
 }
 //----------------------------------------------
 @media (max-width: 1022px) {
@@ -293,6 +297,27 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+  }
+  .basket__table {
+    width: 100%;
+    overflow-x: scroll;
+    
+    table {
+      width: 990px;
+    }
+  }
+  .form__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    
+    .form__comment {
+      margin: 0;
+      margin-bottom: 20px;
+      order: 1;
+    }
+    .form__label {
+      order: 2;
+    }
   }
 }
 //----------------------------------------------
@@ -405,6 +430,7 @@
   .footer__info {
     margin-top: 20px;
   }
+  .form__string,
   .form__line,
   .modal__product {
     display: block;
@@ -461,6 +487,19 @@
   }
   .sorting {
     flex-wrap: wrap;
+  }
+  .basket__sum {
+    padding-right: 15px;
+  }
+  .form__string .form__field {
+    width: 100%;
+  }
+  .basket__order .title-3 {
+    text-align: center;
+  }
+  .form__order {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 //----------------------------------------------
@@ -548,6 +587,7 @@
   .breadcrumbs {
     margin-top: 70px;
   }
+  .basket__order,
   .card__tabs,
   .card__form {
     padding: 20px;
@@ -577,5 +617,11 @@
   }
   .card__thumb {
     height: 60px;
+  }
+  .basket__sum {
+    padding-left: 15px;
+  }
+  .form__order {
+    width: 100%;
   }
 }
