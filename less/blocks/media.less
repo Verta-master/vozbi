@@ -37,8 +37,12 @@
   .gallery__slider .owl-nav button.owl-prev {
     top: -70px;
   }
+  .catalog__list,
   .catalog__slider {
     margin-right: -10px;
+  }
+  .catalog__item {
+    margin-right: 15px;
   }
   .catalog__slide {
     margin-right: 20px;
@@ -183,6 +187,77 @@
     max-width: 100%;
     width: 33%;
   }
+  .wrapper--columns {
+    display: block;
+  }
+  .wrapper__content {
+    width: 100%;
+  }
+  .catalog__list {
+    margin-right: 0;
+  }
+  .catalog__item {
+    margin-right: 30px;
+  }
+  .filter {
+    padding: 20px;
+  }
+  .filter__title {
+    margin-bottom: 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  .filter__field {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    max-width: 100%;
+    display: block;
+    opacity: 0;
+    width: 0;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px rgba(54, 34, 79, 0.1);
+    .transition();
+  }
+  .filter__field--open {
+    opacity: 1;
+    width: 360px;
+    z-index: 1100;
+    .transition();
+  }
+  .filter__options {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 40px 30px;
+    
+    &::before {
+      content: "Фильтры";
+      position: absolute;
+      top: 10px;
+      left: 30px;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      color: #000;
+      text-transform: uppercase;
+    }
+  }
+  .filter__close {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/cross.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+  }
 }
 //----------------------------------------------
 @media (max-width: 1022px) {
@@ -201,6 +276,15 @@
   }
   .article__img {
     margin-bottom: 20px;
+  }
+  .catalog__list {
+    justify-content: space-around;
+  }
+  .catalog__item {
+    margin-right: 0;
+  }
+  .pages {
+    justify-content: center;
   }
 }
 //----------------------------------------------
@@ -366,6 +450,9 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  .sorting {
+    flex-wrap: wrap;
+  }
 }
 //----------------------------------------------
 @media (max-width: 480px) {
@@ -441,5 +528,15 @@
   .article table td:first-child {
     width: 100%;
     font-weight: 600;
+  }
+  .sorting {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .breadcrumbs {
+    margin-top: 70px;
   }
 }
