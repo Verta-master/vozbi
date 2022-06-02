@@ -1,0 +1,28 @@
+.breadcrumbs {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #747474;
+}
+.breadcrumbs__link {
+  display: inline-block;
+  vertical-align: middle;
+}
+a.breadcrumbs__link {
+  color: #828282;
+  margin-right: 15px;
+  text-decoration: none;
+  
+  &::after {
+    content: "/";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
