@@ -132,7 +132,7 @@
     <div class="breadcrumbs">
       <div class="wrapper">
         <a href="#" class="breadcrumbs__link">Главная</a>
-        <span class="breadcrumbs__link">корзина</span>
+        <span class="breadcrumbs__link">Kорзина</span>
       </div>
     </div>
     
@@ -226,8 +226,10 @@
                 <input type="text" id="name" class="form__input">
               </div>
             </div>
-            <label for="message" class="form__text">Комментарий к заказу</label>
-            <textarea id="message" class="form__message"></textarea>
+            <div class="form__field">
+              <label for="message" class="form__text">Комментарий к заказу</label>
+              <textarea id="message" class="form__message"></textarea>
+            </div>
             <div class="form__string">
               <div class="form__field form__field--delivery">
                 <div class="form__text">Способ доставки</div>
@@ -236,7 +238,7 @@
                 <input type="radio" id="radio2" name="radio" class="form__radio">
                 <label for="radio2" class="form__radiolabel">Самовывоз</label>
               </div>
-              <div class="form__field form__field--city">
+              <div class="form__field form__field--delivery">
                 <label for="name" class="form__text">Город доставки</label>
                 <input type="text" id="name" class="form__input">
               </div>
@@ -246,8 +248,8 @@
               </div>
             </div>
             <div class="form__bottom">
-              <input type="checkbox2" id="checkbox" class="form__checkbox" checked>
-              <label for="checkbox2" class="form__label">Принимаю <a href="#">пользовательское положение и политику конфиденциальности</a></label>
+              <input type="checkbox" id="checkbox3" class="form__checkbox" checked>
+              <label for="checkbox3" class="form__label">Принимаю <a href="#">пользовательское положение и политику конфиденциальности</a></label>
               <p class="form__comment">* — обязательно для заполнения</p>
             </div>
             <button type="submit" class="btn form__order">оформить заказ</button>

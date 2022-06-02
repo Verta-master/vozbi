@@ -1,0 +1,133 @@
+.basket__wrap {
+  margin-bottom: 50px;
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.basket__table {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    th,
+    td {
+      vertical-align: middle;
+      border-bottom: 1px solid #E8E8E8;
+      
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+    th {
+      height: 53px;
+      text-align: left;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #828282;
+      
+      &:nth-child(2) {
+        padding-left: 40px;
+      }
+    }
+    td {
+      height: 100px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      
+      &:last-child {
+        width: 65px;
+      }
+      &:nth-child(5) {
+        width: 134px;
+      }
+      &:nth-child(4) {
+        width: 198px;
+      }
+      &:nth-child(3) {
+        width: 161px;
+      }
+      &:nth-child(2) {
+        padding-left: 40px;
+        padding-right: 70px;
+      }
+    }
+  }
+  .form__num {
+    width: 116px;
+  }
+}
+.basket__img {
+  width: 116px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.727273px solid #E8E8E8;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 100%;
+  }
+}
+.basket__title {
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+}
+.basket__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+  
+  b {
+    font-weight: 800;
+  }
+}
+.basket__remove {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/cross.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+}
+.basket__sum {
+  margin: 0;
+  padding: 18px 100px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  
+  span {
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    background: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+.basket__order {
+  padding: 40px;
+  background: #F7F6FA;
+  border-radius: 10px;
+  
+  .title-3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
