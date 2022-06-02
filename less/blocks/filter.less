@@ -4,3 +4,149 @@
   margin-bottom: 30px;
   padding: 30px;
 }
+.filter__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+  text-transform: uppercase;
+}
+.filter__block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #E8E8E8;
+  
+  .form__label {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &:nth-of-type(n + 9) {
+      display: none;
+    }
+  }
+  &--more {
+    .form__label:nth-of-type(n + 9) {
+      display: block;
+    }
+  }
+}
+.filter__subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+}
+.filter__btn {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.filter__cancel {
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.filter__cancel,
+.filter__more {
+  display: block;
+  color: #5D3589;
+  text-decoration: none;
+  
+  span {
+    border-bottom: 1px dashed #5D3589;
+  }
+  &:hover span,
+  &:active span {
+    border-bottom-color: rgba(255,255,255,0);
+  }
+}
+.filter__more {
+  margin-top: 13px;
+}
+.filter__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+.filter__input {
+  width: 91px;
+  height: 46px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+}
+.filter__range {
+  .ui-slider {
+    position: relative;
+  }
+  /* Ползунок */
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #9945B7 0%, #313681 100%);
+    cursor: pointer;
+    outline: none;
+  }
+  .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+  }
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  .ui-slider-horizontal {
+    height: 4px;
+  }
+  /* позиционируем ползунки */
+  .ui-slider-horizontal .ui-slider-handle { 
+    top: -8px;
+    margin-left: -8px;
+  }
+  .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+  }
+  .ui-slider-horizontal .ui-slider-range-min { 
+    left: 0;
+  }
+  .ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+  }
+  /* оформление полосы по которой ходит ползунок */
+  .ui-widget-content { 
+    border: 0;
+    background-color: rgba(93, 53, 137, 0.2);
+  }
+  /* оформление активного участка (между двумя ползунками) */
+  .ui-widget-header { 
+    border: 0;
+    background: #5D3589;
+  }
+  /* скругление для полосы слайдера */
+  .ui-corner-all {
+    border-radius: 4px;
+  }
+  .ui-widget.ui-widget-content {
+    border: 0;
+  }
+}
